@@ -1,21 +1,45 @@
 import tkinter as tk
 
+sona_translate = {}
+translate_sona = {}
+
+def failist_to_dict(f: str):
+    file = open(f, 'r', encoding="utf-8-sig")
+    for line in file:
+        k, v = line.strip().split('-')
+        sona_translate[k] = v
+        translate_sona[v] = k
+    file.close()
+    return sona_translate, translate_sona
+
+
 # Словарь соответствия английских слов их переводам
-translation_dict = {
-    'hello': 'привет',
-    'world': 'мир',
-    'python': 'питон'
-}
+def trn():
+    if entry.get()==sona_translate.get():
+
+
+
+
+
 
 # Функция для перевода слова
 def translate(word):
-    return translation_dict.get(word, word)
+    return sona_translate.get(word, word)
 
 # Функция для обработки события нажатия кнопки
 def translate_word():
     word = entry.get()
     translation = translate(word)
     label.config(text=translation)
+
+
+
+
+def ds():
+    a=failist_to_dict('sonad.txt')
+    print(a)
+
+
 
 # Создаем графический интерфейс
 root = tk.Tk()

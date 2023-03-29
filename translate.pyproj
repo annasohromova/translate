@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>cb41c69f-309a-4584-a2a7-d0d21f77a57a</ProjectGuid>
+    <ProjectGuid>62237dd5-9b2b-48f8-a85a-3ae53b6e3828</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>translate.py</StartupFile>
     <SearchPath>
@@ -24,7 +24,7 @@
     <Compile Include="translate.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="translate.txt" />
+    <Content Include="sonad.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
